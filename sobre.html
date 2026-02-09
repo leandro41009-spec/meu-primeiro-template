@@ -2,15 +2,54 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós | Melhor Caiaque</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <div class="container mx-auto px-4 py-10 max-w-2xl">
-        <a href="index.html" class="text-blue-700">← Voltar</a>
-        <h1 class="text-4xl font-black my-6">Sobre o Melhor Caiaque</h1>
-        <p class="mb-4 text-lg">Somos apaixonados por pesca esportiva e caiaque. Nosso objetivo é testar cada modelo do mercado para que você faça a escolha certa.</p>
-        <p>Com mais de 10 anos de experiência na água, trazemos reviews honestos e detalhados.</p>
-    </div>
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black text-blue-700 italic">MELHOR<span class="text-gray-800">CAIAQUE</span></a>
+            <ul class="flex space-x-6 font-semibold text-gray-600">
+                <li><a href="index.html" class="hover:text-blue-700 transition">Home</a></li>
+                <li><a href="blog.html" class="hover:text-blue-700 transition">Blog</a></li>
+                <li><a href="sobre.html" class="text-blue-700 font-bold">Sobre</a></li>
+                <li><a href="contato.html" class="hover:text-blue-700 transition">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 max-w-3xl flex-grow">
+        <h1 class="text-5xl font-black mb-8 text-gray-900 leading-tight">Ajudando você a escolher o seu próximo <span class="text-blue-700 text-6xl">Caiaque.</span></h1>
+        
+        <div class="prose prose-lg text-gray-600 space-y-6">
+            <p class="text-xl leading-relaxed">O <strong>Melhor Caiaque</strong> nasceu da frustração de não encontrar reviews honestos e detalhados sobre os equipamentos de pesca no Brasil.</p>
+            
+            <p>Nós acreditamos que um caiaque é mais do que apenas um pedaço de polietileno; é a sua liberdade na água, o seu momento de paz e a sua ferramenta para capturar o troféu da sua vida.</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-10">Nossa Missão</h2>
+            <p>Nossa missão é simples: testar cada modelo, do casco ao sistema de propulsão, e entregar a você a verdade nua e crua. Sem patrocínios que escondem defeitos, apenas a experiência real de quem está no comando do remo ou do pedal.</p>
+
+            <div class="bg-blue-700 p-8 rounded-3xl text-white my-12 shadow-xl">
+                <h3 class="text-2xl font-bold mb-4 italic">Por que confiar em nós?</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-300"></i> Mais de 500 horas de navegação acumuladas.</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-300"></i> Testes em rios, represas e mar aberto.</li>
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-300"></i> Reviews baseados em durabilidade e custo-benefício.</li>
+                </ul>
+            </div>
+
+            <p>Ao clicar em nossos links e realizar uma compra, recebemos uma pequena comissão. Isso não custa nada a mais para você e nos ajuda a manter o site no ar e a continuar comprando equipamentos novos para testar. Obrigado por apoiar o conteúdo independente!</p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2026 Melhor Caiaque. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
