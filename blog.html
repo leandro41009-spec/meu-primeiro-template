@@ -2,16 +2,50 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Blog | Melhor Caiaque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Todos os Reviews | Melhor Caiaque</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <div class="container mx-auto px-4 py-10 max-w-3xl">
-        <a href="index.html" class="text-blue-700">← Voltar Home</a>
-        <h1 class="text-4xl font-black my-6">Todos os Reviews</h1>
-        <ul class="space-y-4">
-            <li class="border-b pb-2"><a href="artigo1.html" class="hover:text-blue-700 font-bold">Review Caiaque Iron</a></li>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black text-blue-700 italic">MELHOR<span class="text-gray-800">CAIAQUE</span></a>
+            <ul class="flex space-x-6 font-semibold text-gray-600">
+                <li><a href="index.html" class="hover:text-blue-700">Home</a></li>
+                <li><a href="blog.html" class="text-blue-700">Blog</a></li>
+                <li><a href="sobre.html" class="hover:text-blue-700">Sobre</a></li>
+                <li><a href="contato.html" class="hover:text-blue-700">Contato</a></li>
             </ul>
-    </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <h1 class="text-4xl font-black mb-10 border-b-4 border-blue-700 inline-block">Arquivo de Reviews</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex gap-4 items-center hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=200" class="w-24 h-24 object-cover rounded-xl">
+                <div>
+                    <h2 class="text-lg font-bold hover:text-blue-700 transition">
+                        <a href="artigo1.html">Review Caiaque Iron: O Guia Definitivo</a>
+                    </h2>
+                    <p class="text-gray-500 text-sm mt-1">Análise completa de estabilidade e performance.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400 italic">
+                Próximo review chegando em breve...
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 mt-auto text-center text-sm">
+        <p>&copy; 2026 Melhor Caiaque. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
