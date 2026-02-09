@@ -2,17 +2,53 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Melhor Caiaque</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <div class="container mx-auto px-4 py-10 max-w-xl text-center">
-        <a href="index.html" class="text-blue-700">← Voltar</a>
-        <h1 class="text-4xl font-black my-6">Fale Conosco</h1>
-        <p class="mb-8">Tem alguma dúvida ou sugestão de review? Envie um e-mail para:</p>
-        <div class="bg-white p-6 rounded-lg shadow-sm border">
-            <p class="text-xl font-bold text-blue-700">contato@seu-email.com</p>
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black text-blue-700 italic">MELHOR<span class="text-gray-800">CAIAQUE</span></a>
+            <ul class="flex space-x-6 font-semibold text-gray-600">
+                <li><a href="index.html" class="hover:text-blue-700 transition">Home</a></li>
+                <li><a href="blog.html" class="hover:text-blue-700 transition">Blog</a></li>
+                <li><a href="sobre.html" class="hover:text-blue-700 transition">Sobre</a></li>
+                <li><a href="contato.html" class="text-blue-700 font-bold">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 max-w-2xl flex-grow text-center">
+        <h1 class="text-5xl font-black mb-6 text-gray-900">Vamos Conversar?</h1>
+        <p class="text-xl text-gray-600 mb-12">Tem alguma dúvida sobre um modelo específico ou quer sugerir o próximo caiaque para nosso review? Estamos ouvindo!</p>
+        
+        <div class="grid grid-cols-1 gap-6">
+            <div class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 transition hover:scale-105 duration-300">
+                <i class="fas fa-envelope text-5xl text-blue-700 mb-6"></i>
+                <h2 class="text-2xl font-bold mb-2">E-mail Direto</h2>
+                <p class="text-gray-500 mb-4">Respondemos em até 24 horas úteis.</p>
+                <a href="mailto:seu-email@aqui.com" class="text-2xl font-black text-blue-700 hover:underline">seu-email@aqui.com</a>
+            </div>
+
+            <div class="bg-blue-700 p-10 rounded-3xl shadow-lg text-white">
+                <h2 class="text-2xl font-bold mb-6 italic">Siga nossas pescarias</h2>
+                <div class="flex justify-center gap-8 text-4xl">
+                    <a href="#" class="hover:text-orange-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-orange-400 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="hover:text-orange-400 transition"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-auto">
+        <div class="container mx-auto px-4 text-center text-gray-500">
+            <p>&copy; 2026 Melhor Caiaque. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
